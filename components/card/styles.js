@@ -89,9 +89,18 @@ export const Wrapper = styled.div`
     }
     &_caroul-btn {
       display: flex;
-      gap: 1rem;
+      gap: 0.5rem;
       padding-top: 2rem;
-      margin-left: -18rem;
+      margin-left: -20rem;
+
+      .btns {
+        font-size: larger;
+        font-weight: bold;
+
+        &:active {
+          color: darkgray;
+        }
+      }
     }
     &_box {
       display: flex;

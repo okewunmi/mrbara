@@ -7,9 +7,7 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import image4 from "../../image/image4.jpg";
 import image1 from "../../image/person.jpg";
-
-import { IoIosArrowBack,IoIosArrowForward } from "react-icons/io";
-
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const reviews = [
   {
@@ -236,6 +234,7 @@ export const Reviews = () => {
           >
             <h1 className="details_headings">{reviews[activeIndex].heading}</h1>
             <p className="details_txt">{reviews[activeIndex].subtext}</p>
+
             <div className="details_box">
               <Image
                 src={reviews[activeIndex].image}
@@ -243,10 +242,13 @@ export const Reviews = () => {
               />
               <h3 className="details_box-name">{reviews[activeIndex].name}</h3>
             </div>
+          </motion.div>
           <div className="details_caroul-btn">
-            <button onClick={prevReview}><IoIosArrowBack />
+            <button onClick={prevReview} className="btns">
+              <IoIosArrowBack />
             </button>
-            <button onClick={nextReview}><IoIosArrowForward />
+            <button onClick={nextReview} className="btns">
+              <IoIosArrowForward />
             </button>
           </div>
         </div>

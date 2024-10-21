@@ -7,10 +7,12 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   height: 10vh;
   width: 100%;
-  padding: 3rem;
-  background: transparent;
   z-index: 100;
   position: absolute;
+  background: transparent;
+  bottom: 0%;
+  /* background-color: black; */
+  padding: 2rem 3rem;
 
   .menu {
     gap: 0.4rem;
@@ -47,15 +49,10 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     line-height: 1;
-    transition: all 0.5s;
 
     .heading {
       font-weight: bolder;
       font-size: 1.4rem;
-    }
-
-    &:hover {
-      transform: scale(1.1) translateY(10px);
     }
   }
   .profile {

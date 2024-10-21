@@ -50,8 +50,8 @@ export const Wrapper = styled.div`
     transition: all 0.5s;
 
     .heading {
-      font-weight: bolder;
-      font-size: 1.4rem;
+      font-weight: 900;
+      font-size: 1.5rem;
     }
 
     &:hover {

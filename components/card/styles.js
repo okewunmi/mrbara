@@ -17,22 +17,26 @@ export const Wrapper = styled.div`
     align-items: center;
     position: relative;
   }
+  .flexCol {
+    flex-direction: column;
+  }
 
   .number {
     font-size: 10rem;
     opacity: 0.1;
     font-weight: bolder;
     position: absolute;
-    left: -2rem;
+    left: -3rem;
   }
   .details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 
-    width: 50%;
-    gap: 1.6rem;
+    /* width: 56%; */
+    padding: 0 10rem;
+    gap: 1.3rem;
 
     &_heading {
       font-size: 0.75rem;
@@ -43,21 +47,69 @@ export const Wrapper = styled.div`
 
     &_head,
     &_greet {
-      font-size: 1.6rem;
+      font-size: 2.5rem;
       font-weight: 900;
+      line-height: normal;
+    }
+    &_headings {
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1;
+      width: 17rem;
     }
     &_head {
       margin-top: -2.1rem;
     }
     &_sub {
       letter-spacing: 6px;
-      font-size: 1rem;
-      font-weight: 300;
+      font-size: 1.1rem;
+      font-weight: 500;
     }
     &_txt {
-      font-size: 0.82rem;
+      font-size: 13px;
       text-align: justify;
-      line-height: 1.8;
+      line-height: 1.7;
+      font-weight: lighter;
+    }
+    &_btn {
+      background: brown;
+      display: flex;
+      align-self: flex-start;
+      padding: 0 1.3rem;
+      height: 2.1rem;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: bolder;
+      border-radius: 3rem;
+      transition: all 0.4;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    &_caroul-btn {
+      display: flex;
+      gap: 1rem;
+      padding-top: 2rem;
+      margin-left: -18rem;
+    }
+    &_box {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      flex-direction: row;
+
+      &-img {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 100%;
+        border: 2px solid brown;
+        object-fit: cover;
+      }
+      &-name {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
     }
   }
 

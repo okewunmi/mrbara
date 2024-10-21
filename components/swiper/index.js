@@ -10,8 +10,13 @@ import { Wrapper } from "./styles";
 import Header from "../Header/index";
 import Footer from "../Footer/index";
 import person from "../../image/persons.jpg";
+import image1 from "../../image/image5.jpg";
 import persons from "../../image/person.jpg";
-import { SectionLeft, SectionRight } from "../card/index"; // Named import for SectionLeft
+import image2 from "../../image/image2.jpg";
+import image3 from "../../image/image3.jpg";
+import image4 from "../../image/image4.jpg";
+import { Reviews, SectionLeft, SectionRight } from "../card/index";
+import { Reveal, Slide } from "react-swift-reveal"; // Named import for SectionLeft
 // import required modules
 import { Navigation } from "swiper/modules";
 
@@ -51,10 +56,11 @@ const Index = () => {
             sectionNumber="01"
             heading="Creating Tomorrow's Fashion"
             greet="Hello!"
-            title=" I'm Mr. Bara"
+            title=" I'm Mr.Bara"
             subtitle="Fashion Designer"
             description="Crafts bold, elegant designs that inspire confidence and elevate everyday fashion. Specializes in minimalist aesthetics with a modern touch, blending classic style with contemporary trends."
-            image={person} // Add an image in public/images
+            name=""
+            image={image2} // Add an image in public/images
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
@@ -65,20 +71,23 @@ const Index = () => {
             title=" "
             // subtitle="Fashion Designer"
             description="Discover a world where elegance meets minimalism in every design. Crafting timeless pieces with a focus on subtlety and refinement."
-            image={persons} // Add an image in public/images
+            name="Explore Collection"
+            image={image4} // Add an image in public/images
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <SectionLeft
-            sectionNumber="03"
-            greet="Hello!"
-            title=" I'm Mr. Bara"
-            subtitle="Fashion Designer"
-            description="I craft bold designs that inspire people around the globe.I craft bold designs that inspire people around the globe.I craft bold designs that inspire people around the globe."
-            image={person} // Add an image in public/images
+            // sectionNumber="03"
+            // greet="Hello!"
+            // title=" I'm Mr. Bara"
+            // subtitle="Fashion Designer"
+            // description="I craft bold designs that inspire people around the globe.I craft bold designs that inspire people around the globe.I craft bold designs that inspire people around the globe."
+            image={image3} // Add an image in public/images
           />
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 4</SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <Reviews />
+        </SwiperSlide>
         <SwiperSlide className="swiper-slide">Slide 5</SwiperSlide>
         <SwiperSlide className="swiper-slide">Slide 6</SwiperSlide>
         <SwiperSlide className="swiper-slide">Slide 7</SwiperSlide>
